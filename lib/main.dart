@@ -4,9 +4,6 @@
  * Copyright (C) 2020- Scandit AG. All rights reserved.
  */
 
-import 'dart:ffi';
-import 'dart:convert';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
@@ -21,7 +18,7 @@ void main() async {
   runApp(MyApp());
 }
 
-const String licenseKey = 'Scandit License here';
+const String licenseKey = "-- ENTER YOUR SCANDIT LICENSE KEY HERE --";
 
 class MyApp extends StatelessWidget {
   @override
@@ -196,7 +193,7 @@ String modulo10(String numero)  {
   double peso  = 2;
   int contador = numero.length-1;
   while (contador >= 0) {
-    double multiplicacao = double.parse(numero.substring(contador,contador+1)) * peso;
+    double multiplicacao = (double.parse(numero.substring(contador,contador+1)) * peso);
     if (multiplicacao >= 10) {multiplicacao = 1 + (multiplicacao-10);}
     soma = soma + multiplicacao;
     if (peso == 2) {
@@ -220,7 +217,7 @@ String modulo11Banco(String numero) {
   double base  = 9;
   int contador = numero.length - 1;
   for (int i=contador; i >= 0; i--) {
-    soma = soma +  double.parse(numero.substring(i,i+1)) * peso;
+    soma = soma +  (double.parse(numero.substring(i,i+1)) * peso);
     if (peso < base) {
       peso++;
     } else {
@@ -251,7 +248,7 @@ String calculaLinha(String barra)  {
   var digitoValAr = digito.split('.');
 
   if (  digitoValAr[0] != campo4 ) {
-    return ("Digito verificador '+campo4+', o correto é '+modulo11_banco(  linha.substr(0,4)+linha.substr(5,99)  )+'\nO sistema não altera automaticamente o dígito correto na quinta casa!'"); //Error
+    return ("Digito verificador "+campo4+", o correto é "+digitoValAr[0]+"\nO sistema não altera automaticamente o dígito correto na quinta casa!"); //Error
   }
 
   return   campo1 + modulo10(campo1)
@@ -263,5 +260,5 @@ String calculaLinha(String barra)  {
       +campo4
       +' '
       +campo5
-  ;;
+  ;
 }
