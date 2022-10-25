@@ -4,5 +4,5 @@ To see the currently available samples and how to run them, take a look at our [
 
 If you want to learn more about the SDK, check out the complete documentation and getting started guides [here](https://docs.scandit.com/data-capture-sdk/flutter/).
 
-# Added by me
+## Added by me
 This sample was also edited to add the conversion to digitable line for Boletos 
