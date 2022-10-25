@@ -1,0 +1,4 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scandit_flutter_datacapture_barcode.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scandit_flutter_datacapture_core.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScanditBarcodeCapture.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScanditCaptureCore.framework

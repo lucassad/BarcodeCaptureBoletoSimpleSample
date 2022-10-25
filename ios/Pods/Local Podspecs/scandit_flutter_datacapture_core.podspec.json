@@ -1,0 +1,34 @@
+{
+  "name": "scandit_flutter_datacapture_core",
+  "version": "6.14.1",
+  "summary": "Scandit Data Capture SDK for Flutter. ScanditCaptureCore builds the foundation of all data capture related functionality offered by the Scandit Data Capture SDK. It contains classes and interfaces shared between the data capture modules.",
+  "homepage": "https://scandit.com",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "Scandit": "support@scandit.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source": {
+    "path": "."
+  },
+  "swift_versions": "4.0",
+  "source_files": "Classes/**/*.{h,m,swift}",
+  "requires_arc": true,
+  "dependencies": {
+    "ScanditCaptureCore": [
+      "= 6.14.1"
+    ],
+    "Flutter": [
+
+    ]
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES",
+    "VALID_ARCHS[sdk=iphonesimulator*]": "x86_64"
+  },
+  "swift_version": "4.0"
+}

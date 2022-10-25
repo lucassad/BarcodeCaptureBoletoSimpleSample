@@ -1,0 +1,47 @@
+PODS:
+  - Flutter (1.0.0)
+  - permission_handler_apple (9.0.4):
+    - Flutter
+  - scandit_flutter_datacapture_barcode (6.14.1):
+    - Flutter
+    - scandit_flutter_datacapture_core
+    - ScanditBarcodeCapture (= 6.14.1)
+  - scandit_flutter_datacapture_core (6.14.1):
+    - Flutter
+    - ScanditCaptureCore (= 6.14.1)
+  - ScanditBarcodeCapture (6.14.1):
+    - ScanditCaptureCore (= 6.14.1)
+  - ScanditCaptureCore (6.14.1)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
+  - scandit_flutter_datacapture_barcode (from `.symlinks/plugins/scandit_flutter_datacapture_barcode/ios`)
+  - scandit_flutter_datacapture_core (from `.symlinks/plugins/scandit_flutter_datacapture_core/ios`)
+
+SPEC REPOS:
+  trunk:
+    - ScanditBarcodeCapture
+    - ScanditCaptureCore
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
+  scandit_flutter_datacapture_barcode:
+    :path: ".symlinks/plugins/scandit_flutter_datacapture_barcode/ios"
+  scandit_flutter_datacapture_core:
+    :path: ".symlinks/plugins/scandit_flutter_datacapture_core/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  permission_handler_apple: 44366e37eaf29454a1e7b1b7d736c2cceaeb17ce
+  scandit_flutter_datacapture_barcode: 599337f0824baa8bef1a965eef3676e79bdad709
+  scandit_flutter_datacapture_core: a684c02b8a15a8c01682590047a36f1a34ab1b68
+  ScanditBarcodeCapture: ee3332eb330872703d998bcce5c748ec35331e5e
+  ScanditCaptureCore: 5b275712b57e7b07917c3e42476b4f789a074c19
+
+PODFILE CHECKSUM: c501a8a084033a2636bd411fca991c86c09e4572
+
+COCOAPODS: 1.11.3
